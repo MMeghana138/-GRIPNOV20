@@ -1,0 +1,16 @@
+-----
+maketrans(x, y, z)
+x: characters to replace
+y: replacement characters
+z: characters to delete
+Example:
+table = str.maketrans("abc", "123", "xyz")
+text = "abcxyz"
+print(text.translate(table))
+Output:
+123
+
+str.maketrans(...)   # creates the rules
+text.translate(...)  # applies the rules
+Note : You must use translate() to apply maketrans
+-----
